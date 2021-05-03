@@ -34,4 +34,8 @@ class QuadTree():
             self.points.append(point)
         elif self.divided is not False:
             self.subdivide()
-            
+        
+        self.ne.insert(point)
+        self.nw.insert(point)
+        self.se.insert(point)
+        self.sw.insert(point)
